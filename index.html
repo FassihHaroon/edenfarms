@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eden Farm Qatar · Farm-fresh mushrooms</title>
+<meta name="description" content="Farm-fresh white button, brown and portabella mushrooms grown at Eden Farm in Qatar, plus our vegetables, herbs and Sidr honey. Picked in the morning, delivered across Doha the same day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.5 2.4C19.5 15.4 12 20 12 20Z" style="fill:var(--hf,none)" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="9.8" r="2.3" fill="currentColor"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="17.5" r="1.8" fill="var(--paper)" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17.5" r="1.8" fill="var(--paper)" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 10 5 20 4c0 9-5 15-13 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M5 19c3-4 6-7 10-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><rect x="13" y="4" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><rect x="4" y="13" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><rect x="13" y="13" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z" fill="currentColor"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 8.3c.2-.4.5-.4.8-.4h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.5.9 1.3 1.7 2.3 2.2.2.1.4.1.5-.1l.6-.7c.2-.2.4-.2.6-.1l1.6.8c.2.1.4.2.4.4 0 .6-.2 1.3-.8 1.7-.6.4-1.5.6-2.6.2a9 9 0 0 1-4.8-4.3c-.6-1.2-.4-2.3.3-3.1Z" fill="currentColor"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8.5V7c0-.8.5-1.2 1.2-1.2H17V2.6h-2.6C11.7 2.6 10.6 4.4 10.6 7v1.5H8V12h2.6v9.4H14V12h2.6l.5-3.5Z" fill="currentColor"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-gps" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6.5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="2.3" fill="currentColor"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ============ ANNOUNCEMENT ============ -->
+<div class="announce">
+  <div class="wrap announce__row">
+    <p class="announce__msg"><svg class="ic"><use href="#i-clock"/></svg> Order before <b>2:00 pm</b> for same-day delivery in Doha <span class="announce__count" id="cutoff"></span></p>
+    <p class="announce__msg announce__msg--side">Free delivery over QAR 100</p>
+    <div class="announce__links">
+      <a href="track.html">Track order</a>
+      <a href="about.html">About us</a>
+      <a href="about.html#contact">Contact</a>
+      <a class="lang lang-switch" href="/ar/" lang="ar">العربية</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="top">
+  <div class="wrap header__row">
+    <button class="icon-btn header__menu" id="menu-open" aria-label="Open menu"><svg class="ic"><use href="#i-menu"/></svg></button>
+
+    <a class="logo" href="#top" aria-label="Eden Farm Qatar home">
+      <img class="logo__img" src="assets/img/logo.avif" alt="Eden Farm · مزرعة عدن" width="542" height="168">
+    </a>
+
+    <button class="deliver" type="button" id="deliver-btn">
+      <svg class="ic"><use href="#i-pin"/></svg>
+      <span><small id="deliver-small">Deliver to</small><b id="deliver-area">Set your location</b></span>
+    </button>
+
+    <form class="search" id="search-form" role="search" autocomplete="off">
+      <svg class="ic search__ic"><use href="#i-search"/></svg>
+      <label for="search-input" class="sr">Search produce</label>
+      <input id="search-input" type="search" placeholder="Search mushrooms, peppers, honey…">
+      <div class="search__drop" id="search-drop" hidden></div>
+    </form>
+
+    <nav class="header__actions" aria-label="Account">
+      <button class="icon-btn hide-sm" type="button" id="fav-open" aria-label="Favourites"><svg class="ic"><use href="#i-heart"/></svg><span class="dot" id="wish-count" hidden>0</span></button>
+      <button class="cart-btn" type="button" id="cart-open" aria-label="Open cart">
+        <svg class="ic"><use href="#i-bag"/></svg>
+        <span class="cart-btn__txt"><small>Your basket</small><b id="cart-total-h">QAR 0.00</b></span>
+        <span class="dot" id="cart-count" hidden>0</span>
+      </button>
+    </nav>
+  </div>
+
+  <nav class="catnav" aria-label="Categories">
+    <div class="wrap catnav__row">
+      <button type="button" class="catnav__loc" id="loc-chip"><svg class="ic"><use href="#i-pin"/></svg><span id="loc-chip-txt">Set location</span></button>
+      <a href="#shop" data-filter="all" class="is-on">Today's harvest</a>
+      <a href="#mushrooms" class="catnav__star">Mushrooms</a>
+      <a href="#shop" data-filter="vegetables">Vegetables</a>
+      <a href="#shop" data-filter="herbs">Herbs</a>
+      <a href="#shop" data-filter="honey">Farm honey</a>
+      <a href="#boxes">Bundles</a>
+      <a href="#story">Our farm shop</a>
+      <a href="about.html">About us</a>
+      <a href="about.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow"><svg class="ic"><use href="#i-sun"/></svg> Oryx Mushrooms · grown at Eden Farm</p>
+      <h1 class="hero__title">Farm-fresh mushrooms,<br><em>grown in Qatar.</em></h1>
+      <p class="hero__lede">White button, brown and portabella mushrooms from our own growing rooms. Picked in the morning, packed under our Oryx label and delivered across Doha the same day.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#mushrooms">Shop mushrooms <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost" href="#shop">Browse the farm shop</a>
+      </div>
+      <dl class="hero__facts">
+        <div><dt>2002</dt><dd>family farming in Qatar</dd></div>
+        <div><dt>2017</dt><dd>growing our own mushrooms</dd></div>
+        <div><dt>HACCP</dt><dd>certified mushroom house</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero__media">
+      <div class="hero__stage">
+        <img class="hero__crate" src="assets/img/eden/mush-crate.webp" alt="A crate of Oryx white button mushroom packs from Eden Farm" width="1400" height="996">
+        <img class="hero__porta" src="assets/img/eden/mush-porta.webp" alt="A pack of two large portabella mushroom caps" width="900" height="542">
+      </div>
+      <div class="harvest-card">
+        <p class="harvest-card__label">Today's mushroom harvest</p>
+        <p class="harvest-card__time"><span id="harvest-date">Tue 30 Sep</span> · picked this morning</p>
+        <ul class="harvest-card__list">
+          <li><span class="swatch" style="--c:#EFE6D4"></span>White button</li>
+          <li><span class="swatch" style="--c:#9A6A42"></span>Brown</li>
+          <li><span class="swatch" style="--c:#6E4529"></span>Portabella</li>
+          <li class="muted" id="harvest-more">+ 11 more from the farm</li>
+        </ul>
+      </div>
+      <div class="stamp" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <defs><path id="stamp-circle" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs>
+          <text><textPath href="#stamp-circle">FARM FRESH · GROWN IN QATAR · </textPath></text>
+        </svg>
+        <svg class="stamp__leaf"><use href="#i-leaf"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust" aria-label="Why Eden Farm">
+  <div class="wrap"><div class="trust__row">
+    <div class="trust__item"><svg class="ic"><use href="#i-shield"/></svg><p><b>Certified mushrooms</b><span>HACCP &amp; ETKO organic</span></p></div>
+    <div class="trust__item"><svg class="ic"><use href="#i-leaf"/></svg><p><b>Grown in Qatar</b><span>On our family farm since 2002</span></p></div>
+    <div class="trust__item"><svg class="ic"><use href="#i-truck"/></svg><p><b>Same-day delivery</b><span>Doha, Lusail, Al Wakra & more</span></p></div>
+    <div class="trust__item"><svg class="ic"><use href="#i-check"/></svg><p><b>Freshness promise</b><span>Not perfect? We replace it</span></p></div>
+  </div></div>
+</section>
+
+<!-- ============ MUSHROOM SPOTLIGHT ============ -->
+<section class="mush" id="mushrooms" aria-labelledby="mush-h">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow eyebrow--cap"><svg class="ic"><use href="#i-star"/></svg> Our speciality · Oryx Mushrooms</p>
+        <h2 class="h2" id="mush-h">Grown in our rooms.<br>Picked this morning.</h2>
+      </div>
+      <p class="section__note">We've grown our own mushrooms at Eden Farm since 2017, using Dutch growing technology. Three varieties, harvested by hand and packed the same day they're picked.</p>
+    </div>
+    <div class="mcards" id="mush-cards"></div>
+    <ul class="mush__why">
+      <li><svg class="ic"><use href="#i-sun"/></svg><p><b>Harvested daily</b><span>Hand-picked and packed the same morning</span></p></li>
+      <li><svg class="ic"><use href="#i-leaf"/></svg><p><b>Dutch growing technology</b><span>Controlled rooms for firm, clean caps</span></p></li>
+      <li><svg class="ic"><use href="#i-shield"/></svg><p><b>HACCP certified</b><span>Audited food-safety standards</span></p></li>
+      <li><svg class="ic"><use href="#i-pin"/></svg><p><b>Product of Qatar</b><span>Days fresher than imported packs</span></p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="section" id="categories">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Shop by category</p>
+        <h2 class="h2">Everything from our farm</h2>
+      </div>
+      <a class="link-arrow" href="#shop">View all produce <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="cats" id="cats"></div>
+  </div>
+</section>
+
+<!-- ============ SHOP / PRODUCT GRID ============ -->
+<section class="section section--tint" id="shop">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Fresh this morning</p>
+        <h2 class="h2">Today's harvest</h2>
+      </div>
+      <div class="tabs" role="tablist" id="tabs">
+        <button role="tab" data-filter="all" aria-selected="true">All</button>
+        <button role="tab" data-filter="mushrooms" aria-selected="false">Mushrooms</button>
+        <button role="tab" data-filter="vegetables" aria-selected="false">Vegetables</button>
+        <button role="tab" data-filter="herbs" aria-selected="false">Herbs</button>
+        <button role="tab" data-filter="honey" aria-selected="false">Honey</button>
+        <button role="tab" data-filter="saved" aria-selected="false" id="tab-fav" class="tabs__fav" hidden>♥ Favourites</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="grid__more">
+      <button class="btn btn--ghost" id="show-more" type="button">Show more produce</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROMO BANNERS ============ -->
+<section class="section">
+  <div class="wrap promos">
+    <a class="promo promo--green" href="#boxes">
+      <div class="promo__copy">
+        <p class="eyebrow eyebrow--light">Mushroom Trio<span id="trio-save"></span></p>
+        <h3 class="promo__title">All three mushrooms,<br>one box.</h3>
+        <p>White button, brown and portabella, picked the same morning. Order once, or set it to repeat.</p>
+        <span class="btn btn--light">Get the trio <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </div>
+      <img src="assets/img/eden/shop-mush-shelf.webp" alt="" loading="lazy">
+    </a>
+    <a class="promo promo--gold" href="#shop" data-jump="honey">
+      <div class="promo__copy">
+        <p class="eyebrow">From our farm</p>
+        <h3 class="promo__title">Pure Sidr honey,<br>jarred at Eden.</h3>
+        <p>Golden Sidr honey produced on our farm in Qatar.</p>
+        <span class="btn btn--primary">Shop honey <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </div>
+      <img src="assets/img/eden/honey-photo.webp" alt="" loading="lazy">
+    </a>
+  </div>
+</section>
+
+<!-- ============ STORY / PROCESS ============ -->
+<section class="story" id="story">
+  <div class="wrap story__grid">
+    <div class="story__media">
+      <img src="assets/img/eden/shop-front.webp" alt="The Eden Farm shop front, with Oryx Mushrooms and Eden Farm banners, crates of tomatoes and a honey stand" loading="lazy" width="1600" height="1066">
+      <img class="story__inset" src="assets/img/eden/shop-shelf.webp" alt="Shelves inside the shop stocked with peppers, mushroom packs, chillies and sweet corn" loading="lazy" width="999" height="1500">
+    </div>
+    <div class="story__copy">
+      <p class="eyebrow eyebrow--light">Visit our farm shop</p>
+      <h2 class="h2 h2--light">From our growing rooms<br>to your table.</h2>
+      <p class="story__lede">Eden Farm has been farming in Qatar since 2002. Imported mushrooms spend days in transit; ours travel a few kilometres. Find them at our farm shop in Doha alongside our vegetables, herbs and Sidr honey, or have them delivered.</p>
+      <ol class="steps">
+        <li><span class="steps__n">6:00</span><div><b>Picked at dawn</b><p>Mushrooms hand-harvested from our growing rooms, vegetables cut in the cool of the morning.</p></div></li>
+        <li><span class="steps__n">10:00</span><div><b>Packed &amp; chilled</b><p>Sealed in Oryx and Eden Farm packs and kept chilled until they leave the farm.</p></div></li>
+        <li><span class="steps__n">14:00</span><div><b>Out for delivery</b><p>Chilled vans leave for Doha. Follow your order live on our tracking page.</p></div></li>
+      </ol>
+      <a class="btn btn--light" href="about.html#contact">Find the shop <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRESH BOXES ============ -->
+<section class="section" id="boxes">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Bundles</p>
+        <h2 class="h2">Boxes from the farm</h2>
+      </div>
+      <p class="section__note">Our mushrooms and vegetables, bundled. Order once, or have your basket repeat every week.</p>
+    </div>
+    <div class="boxes" id="box-list"></div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section section--tint" id="reviews">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Loved across Qatar</p>
+        <h2 class="h2">What our customers say</h2>
+      </div>
+      <p class="rating"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span> <b>4.9</b> average · sample reviews</p>
+    </div>
+    <!-- Placeholder reviews: replace with real customer quotes before launch. -->
+    <div class="quotes">
+      <figure class="quote">
+        <blockquote>“The portabellas are the size of my hand. We grill them every weekend and they're always firm and fresh, never slimy like imported ones.”</blockquote>
+        <figcaption><span class="avatar">MA</span><span><b>Customer name</b><small>The Pearl · mushroom trio</small></span></figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>“I like knowing the mushrooms are grown here in Qatar. The brown ones have so much more flavour than supermarket packs.”</blockquote>
+        <figcaption><span class="avatar">NQ</span><span><b>Customer name</b><small>Al Waab · since 2023</small></span></figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>“Ordering on WhatsApp is so easy. The driver called ahead and the corn and peppers were perfect.”</blockquote>
+        <figcaption><span class="avatar">SK</span><span><b>Customer name</b><small>Lusail · veg basket</small></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM + NEWSLETTER ============ -->
+<section class="section">
+  <div class="wrap social">
+    <div class="social__head">
+      <p class="eyebrow">@edenfarmqatar</p>
+      <h2 class="h2">Follow the harvest</h2>
+      <a class="link-arrow" href="https://www.instagram.com/edenfarmqatar" target="_blank" rel="noopener">Open Instagram <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="ig">
+      <img src="assets/img/eden/ig-shop.webp" alt="The Eden Farm shop entrance" loading="lazy">
+      <img src="assets/img/eden/ig-shelf.webp" alt="Mushroom and pepper packs on the shop shelves" loading="lazy">
+      <img src="assets/img/eden/honey-photo.webp" alt="Jars of Eden Farm Sidr honey" loading="lazy">
+      <img src="assets/img/eden/ig-corn.webp" alt="Sweet corn packed with the Eden Farm label" loading="lazy">
+      <img src="assets/img/eden/coriander-2.webp" alt="A bunch of Eden Farm coriander" loading="lazy">
+      <img src="assets/img/eden/ig-peppers.webp" alt="Red and yellow bell peppers in a wooden crate" loading="lazy">
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="logo logo--light" href="#top" aria-label="Eden Farm Qatar home">
+        <img class="logo__img" src="assets/img/logo.avif" alt="Eden Farm · مزرعة عدن" width="542" height="168" loading="lazy">
+      </a>
+      <p>Home of Oryx Mushrooms. Farm-fresh mushrooms, vegetables, herbs and Sidr honey, grown in Qatar and delivered across Doha.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/edenfarmqatar" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic"><use href="#i-ig"/></svg></a>
+        <a href="https://www.facebook.com/edenfarmqatar" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a>
+        <a class="js-wa" href="https://wa.me/97466431863" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="footer__h">Shop</h3>
+      <ul>
+        <li><a href="#mushrooms">Mushrooms</a></li>
+        <li><a href="#shop" data-jump="vegetables">Vegetables</a></li>
+        <li><a href="#shop" data-jump="herbs">Fresh herbs</a></li>
+        <li><a href="#shop" data-jump="honey">Farm honey</a></li>
+        <li><a href="#boxes">Bundles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__h">Help</h3>
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="about.html#contact">Contact us</a></li>
+        <li><a href="track.html">Track your order</a></li>
+        <li><a href="faq.html#delivery">Delivery areas & times</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="refund.html">Freshness promise & refunds</a></li>
+        <li><a href="terms.html">Terms of service</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__h">Get in touch</h3>
+      <ul class="footer__contact">
+        <li><small>Email</small><span>info@edenfarm.qa</span></li>
+        <li><small>WhatsApp & phone</small><span>+974 6643 1863</span></li>
+        <li><small>Farm shop</small><span>Doha, Qatar</span></li>
+        <li><small>Deliveries</small><span id="delivery-hours">Daily, 8 am – 10 pm</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__base">
+    <p>© 2026 Eden Farm Qatar. All rights reserved.</p>
+    <ul class="pay" aria-label="Payment methods">
+      <li>Cash on delivery</li><li>Card on delivery</li><li>Bank transfer</li>
+    </ul>
+  </div>
+</footer>
+
+<!-- ============ FLOATING / MOBILE UI ============ -->
+<a class="wa-float js-wa" href="https://wa.me/97466431863" target="_blank" rel="noopener" aria-label="Order on WhatsApp" title="Order on WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
+
+<nav class="tabbar" aria-label="Mobile">
+  <a href="#top" class="is-on"><svg class="ic"><use href="#i-home"/></svg>Home</a>
+  <a href="#categories"><svg class="ic"><use href="#i-grid"/></svg>Categories</a>
+  <button type="button" id="tab-search"><svg class="ic"><use href="#i-search"/></svg>Search</button>
+  <button type="button" id="tab-saved"><svg class="ic"><use href="#i-heart"/></svg>Saved<span class="dot" id="wish-count-m" hidden>0</span></button>
+  <button type="button" id="tab-cart"><svg class="ic"><use href="#i-bag"/></svg>Basket<span class="dot" id="cart-count-m" hidden>0</span></button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer drawer--left" id="menu" aria-label="Menu" hidden>
+  <div class="drawer__head">
+    <a class="logo" href="#top" aria-label="Eden Farm Qatar home"><img class="logo__img" src="assets/img/logo.avif" alt="Eden Farm · مزرعة عدن" width="542" height="168"></a>
+    <button class="icon-btn" data-close aria-label="Close menu"><svg class="ic"><use href="#i-close"/></svg></button>
+  </div>
+  <nav class="menu-list" id="menu-list"></nav>
+  <div class="menu-foot">
+    <a href="about.html"><svg class="ic"><use href="#i-leaf"/></svg>About us</a>
+    <a href="track.html"><svg class="ic"><use href="#i-truck"/></svg>Track my order</a>
+    <a href="about.html#contact"><svg class="ic"><use href="#i-pin"/></svg>Contact</a>
+    <a class="js-wa" href="https://wa.me/97466431863" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>Order on WhatsApp</a>
+    <a class="lang lang-switch" href="/ar/" lang="ar">العربية</a>
+  </div>
+</aside>
+
+<!-- Cart drawer: basket → delivery details → confirmation -->
+<aside class="drawer drawer--right" id="cart" aria-label="Your basket" hidden>
+  <div class="drawer__head">
+    <button class="icon-btn co-back" id="co-back" type="button" aria-label="Back to basket" hidden><svg class="ic"><use href="#i-back"/></svg></button>
+    <h2 class="h3" id="cart-title">Your basket</h2>
+    <button class="icon-btn" data-close aria-label="Close basket"><svg class="ic"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="freebar" id="freebar">
+    <p id="freebar-msg">Add QAR 100.00 more for free delivery</p>
+    <div class="freebar__track"><span id="freebar-fill"></span></div>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-foot" id="cart-foot">
+    <fieldset class="slots">
+      <legend>Delivery slot</legend>
+      <div class="slots__row" id="slots"></div>
+    </fieldset>
+    <dl class="totals">
+      <div><dt>Subtotal</dt><dd id="t-sub">QAR 0.00</dd></div>
+      <div><dt>Delivery</dt><dd id="t-del">QAR 15.00</dd></div>
+      <div class="totals__grand"><dt>Total</dt><dd id="t-total">QAR 0.00</dd></div>
+    </dl>
+    <button class="btn btn--primary btn--block" type="button" id="checkout">Checkout <svg class="ic"><use href="#i-arrow"/></svg></button>
+    <p class="cart-foot__note" id="cart-note">No payment now. Pay the rider by cash, card or bank transfer when your order arrives.</p>
+  </div>
+
+  <div class="checkout" id="checkout-view" hidden>
+    <form class="co-form" id="checkout-form" novalidate>
+      <p class="co-error" id="co-error" role="alert" hidden></p>
+      <fieldset class="co-sec">
+        <legend>Your details</legend>
+        <div class="field">
+          <label for="co-name">Full name</label>
+          <input id="co-name" name="name" autocomplete="name" maxlength="80" required>
+          <p class="field__err" data-err="customer.name"></p>
+        </div>
+        <div class="field">
+          <label for="co-phone">Mobile number</label>
+          <div class="phone"><span aria-hidden="true">+974</span><input id="co-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="5512 3456" maxlength="16" required></div>
+          <p class="field__err" data-err="customer.phone"></p>
+        </div>
+      </fieldset>
+      <fieldset class="co-sec">
+        <legend>Delivery address</legend>
+        <div class="co-loc" id="co-loc"></div>
+        <p class="field__err" data-err="location"></p>
+        <div class="field">
+          <label for="co-area">Area</label>
+          <input id="co-area" name="area" list="co-areas" autocomplete="address-level2" placeholder="e.g. West Bay" maxlength="60" required>
+          <datalist id="co-areas"></datalist>
+          <p class="field__err" data-err="customer.area"></p>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="co-zone">Zone</label><input id="co-zone" name="zone" inputmode="numeric" maxlength="10"></div>
+          <div class="field"><label for="co-street">Street</label><input id="co-street" name="street" inputmode="numeric" maxlength="10"></div>
+          <div class="field"><label for="co-building">Building</label><input id="co-building" name="building" inputmode="numeric" maxlength="10"></div>
+        </div>
+        <div class="field">
+          <label for="co-details">Flat, landmark or directions <span>optional</span></label>
+          <textarea id="co-details" name="details" rows="2" maxlength="300"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="co-sec">
+        <legend>Repeat this order?</legend>
+        <div class="repeat" id="repeat">
+          <label class="rchip"><input type="radio" name="repeat" value="0" checked><span>Just once</span></label>
+          <label class="rchip"><input type="radio" name="repeat" value="7"><span>Every week</span></label>
+          <label class="rchip"><input type="radio" name="repeat" value="14"><span>Every 2 weeks</span></label>
+          <label class="rchip"><input type="radio" name="repeat" value="30"><span>Every month</span></label>
+          <label class="rchip"><input type="radio" name="repeat" value="custom"><span>Custom</span></label>
+        </div>
+        <div class="repeat__custom" id="repeat-custom" hidden>
+          <label for="co-every">Repeat every</label>
+          <input id="co-every" name="every" type="number" inputmode="numeric" min="3" max="90" value="10">
+          <span>days</span>
+        </div>
+        <p class="repeat__note" id="repeat-note" hidden>We'll prepare this same basket again and call you to confirm before each delivery. Change or stop any time on WhatsApp.</p>
+        <p class="field__err" data-err="repeatEvery"></p>
+      </fieldset>
+      <fieldset class="co-sec">
+        <legend>Pay the rider on delivery</legend>
+        <div class="paychips">
+          <label class="paychip"><input type="radio" name="payment" value="cash" checked><span><b>Cash</b><small>Pay when it arrives</small></span></label>
+          <label class="paychip"><input type="radio" name="payment" value="card"><span><b>Card</b><small>Card machine at your door</small></span></label>
+          <label class="paychip"><input type="radio" name="payment" value="transfer"><span><b>Bank transfer</b><small>Rider shares the details</small></span></label>
+        </div>
+      </fieldset>
+      <div class="field co-sec">
+        <label for="co-notes">Notes for the farm <span>optional</span></label>
+        <textarea id="co-notes" name="notes" rows="2" maxlength="500" placeholder="e.g. call when you arrive"></textarea>
+      </div>
+      <div class="co-hp" aria-hidden="true"><label for="co-website">Leave this empty</label><input id="co-website" name="website" tabindex="-1" autocomplete="off"></div>
+    </form>
+  </div>
+  <div class="cart-foot co-foot" id="checkout-foot" hidden>
+    <div class="co-slot" id="co-slot"></div>
+    <p class="co-sum"><span id="co-count">0 items</span><b id="co-total">QAR 0.00</b></p>
+    <button class="btn btn--primary btn--block" type="submit" form="checkout-form" id="place-order">Place order</button>
+    <p class="cart-foot__note">No payment now. You pay the rider when your order arrives. By placing an order you agree to our <a href="terms.html" target="_blank" rel="noopener">terms</a> and <a href="refund.html" target="_blank" rel="noopener">refund policy</a>.</p>
+  </div>
+
+  <div class="done" id="done-view" hidden></div>
+</aside>
+
+<!-- Delivery location picker -->
+<div class="loc" id="loc" role="dialog" aria-modal="true" aria-labelledby="loc-title" hidden>
+  <div class="loc__panel">
+    <div class="loc__head">
+      <h2 class="h3" id="loc-title">Where should we deliver?</h2>
+      <button class="icon-btn" type="button" data-loc-close aria-label="Close"><svg class="ic"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="loc__body">
+      <button class="btn btn--ghost btn--block loc__gps" type="button" id="loc-gps"><svg class="ic"><use href="#i-gps"/></svg>Use my current location</button>
+      <form class="loc__search" id="loc-search" role="search" autocomplete="off">
+        <label for="loc-q" class="sr">Search for an area or landmark</label>
+        <input id="loc-q" type="search" placeholder="Search an area, street or landmark" maxlength="120">
+        <button class="btn btn--primary" type="submit">Search</button>
+      </form>
+      <div class="loc__results" id="loc-results" hidden></div>
+      <div class="loc__mapwrap">
+        <div class="loc__map" id="loc-map" aria-label="Map. Move it to place the pin on your delivery spot."></div>
+        <svg class="loc__pin" viewBox="0 0 40 52" aria-hidden="true"><path d="M20 51s17-17.3 17-30.5A17 17 0 0 0 3 20.5C3 33.7 20 51 20 51Z" fill="#1D5B3B"/><circle cx="20" cy="20.5" r="6.5" fill="#F2F6EE"/></svg>
+      </div>
+      <p class="loc__hint">Move the map so the pin sits on your door.</p>
+      <div class="loc__status" id="loc-status" role="status" aria-live="polite"></div>
+    </div>
+    <div class="loc__foot">
+      <button class="btn btn--primary btn--block" type="button" id="loc-confirm" disabled>Deliver here</button>
+    </div>
+  </div>
+</div>
+
+<div class="locprompt" id="locprompt" role="dialog" aria-labelledby="locprompt-h" hidden>
+  <svg class="ic locprompt__ic"><use href="#i-pin"/></svg>
+  <p><b id="locprompt-h">Do we deliver to you?</b><span>Check your location in one tap.</span></p>
+  <button class="btn btn--primary" type="button" id="locprompt-go">Check</button>
+  <button class="icon-btn" type="button" id="locprompt-x" aria-label="Not now"><svg class="ic"><use href="#i-close"/></svg></button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="/api/catalog.js"></script>
+<script src="js/site.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

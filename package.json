@@ -1,0 +1,38 @@
+{
+  "name": "edenfarm-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Eden Farm Qatar online store: storefront, order API and admin panel",
+  "type": "module",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "create-admin": "node scripts/create-admin.js",
+    "test": "node --test tests/*.test.js",
+    "e2e": "node tests/e2e/run.js",
+    "i18n": "node scripts/i18n-check.js"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "bcryptjs": "^3.0.3",
+    "compression": "^1.8.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "jose": "^6.2.12",
+    "leaflet": "^1.9.4",
+    "multer": "^2.4.0",
+    "node-html-parser": "^9.0.4",
+    "pg": "^8.23.1",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.12.0"
+  }
+}
