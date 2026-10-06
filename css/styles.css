@@ -236,17 +236,11 @@ fieldset { border: 0; min-width: 0; }
 .hero__facts dd { font-size: var(--t-xs); color: var(--ink-3); margin-top: 6px; line-height: 1.35; }
 
 .hero__media { position: relative; min-width: 0; }
-/* Background-removed product cutouts composed on a deep-green stage */
 .hero__stage {
   position: relative; aspect-ratio: 1 / .94; border-radius: var(--r-lg); overflow: hidden;
-  background:
-    radial-gradient(60% 55% at 50% 42%, color-mix(in srgb, var(--sprout) 26%, transparent), transparent 70%),
-    radial-gradient(120% 100% at 50% 30%, var(--leaf-700), var(--leaf-900) 72%);
-  box-shadow: var(--shadow-lg);
+  background: var(--leaf-900); box-shadow: var(--shadow-lg);
 }
-.hero__stage img { position: absolute; height: auto; }
-.hero__crate { width: 84%; left: 8%; top: 6%; rotate: -4deg; filter: drop-shadow(0 26px 30px rgba(4, 20, 12, .55)); }
-.hero__porta { width: 50%; right: 3%; bottom: 7%; rotate: 9deg; filter: drop-shadow(0 20px 24px rgba(4, 20, 12, .6)); }
+.hero__photo { width: 100%; height: 100%; object-fit: cover; }
 .harvest-card {
   position: absolute; left: 12px; bottom: 12px; width: min(250px, calc(100% - 24px));
   background: color-mix(in srgb, var(--card) 94%, transparent);
@@ -824,8 +818,6 @@ body:has(.drawer.is-open) .toast.is-on { translate: -50% 0; }
   .trust__row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .ig { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .hero__stage { aspect-ratio: 16 / 11; }
-  .hero__crate { width: 70%; left: 6%; top: 8%; }
-  .hero__porta { width: 40%; right: 5%; bottom: 8%; }
   .harvest-card__list { display: grid; }
   .footer__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer__contact { grid-column: auto; }
@@ -887,8 +879,6 @@ body:has(.drawer.is-open) .toast.is-on { translate: -50% 0; }
   .hero__grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 56px; align-items: center; }
   .hero__copy { gap: 22px; }
   .hero__stage { aspect-ratio: 6 / 6.4; max-height: 640px; }
-  .hero__crate { width: 88%; left: 6%; top: 9%; }
-  .hero__porta { width: 54%; right: 2%; bottom: 9%; }
   .harvest-card { left: -36px; bottom: 36px; }
   .stamp { width: 124px; height: 124px; top: -22px; right: -22px; }
 

@@ -1,5 +1,5 @@
 // Product photos uploaded from the admin panel. Each upload is resized, turned
-// into .webp (transparency kept for cut-outs) and stored in the database, so the
+// into .webp (no background removal) and stored in the database, so the
 // shop needs no separate file storage. URLs never change: /img/<uuid>.webp
 import multer from 'multer';
 import sharp from 'sharp';
@@ -16,7 +16,7 @@ export async function saveImage(db, buffer, { maxSize = 1400 } = {}) {
   const img = sharp(buffer, { failOn: 'error' }).rotate(); // apply phone EXIF rotation
   const out = await img
     .resize({ width: maxSize, height: maxSize, fit: 'inside', withoutEnlargement: true })
-    .webp({ quality: 82, alphaQuality: 90, effort: 4 })
+    .webp({ quality: 90, effort: 4 })
     .toBuffer({ resolveWithObject: true });
   const { rows } = await db.query(
     'INSERT INTO images (mime, bytes, width, height) VALUES ($1, $2, $3, $4) RETURNING id',

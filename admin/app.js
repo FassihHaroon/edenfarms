@@ -448,11 +448,11 @@
   }
 
   // Photo picker block: preview + upload button + hidden value.
-  const photoField = (name, url, { label = 'Photo', cut = false, wide = false, hint = '' } = {}) => `
+  const photoField = (name, url, { label = 'Photo', wide = false, hint = '' } = {}) => `
     <div class="f">
       <span class="f__label">${label}</span>
       <div class="photo">
-        <img class="photo__prev${cut ? ' is-cut' : ''}${wide ? ' photo__prev--wide' : ''}" data-prev="${name}" src="${esc(url || '')}" alt="" ${url ? '' : 'hidden'}>
+        <img class="photo__prev${wide ? ' photo__prev--wide' : ''}" data-prev="${name}" src="${esc(url || '')}" alt="" ${url ? '' : 'hidden'}>
         <div class="photo__ctl">
           <label class="b b--ghost b--sm">${icon('i-upload')}<span data-up-label="${name}">${url ? 'Replace photo' : 'Upload photo'}</span>
             <input type="file" accept="image/*" data-upload="${name}" ${wide ? 'data-wide="1"' : ''}></label>
@@ -485,7 +485,6 @@
       prev.src = url; prev.hidden = false;
       return;
     }
-    if (e.target.name === 'cut') sheetForm.querySelector('[data-prev="img"]')?.classList.toggle('is-cut', e.target.checked);
     if (e.target.name === 'cat') sheetForm.querySelector('[data-wide-field]')?.toggleAttribute('hidden', e.target.value !== 'mushrooms');
   });
 
@@ -506,8 +505,7 @@
     const body = `
       <p class="alert alert--error" id="sheet-error" hidden></p>
       <div class="sec">
-        ${photoField('img', p.img, { cut: p.cut, hint: 'Square photos look best. JPG, PNG or WebP.' })}
-        <label class="check"><input type="checkbox" name="cut" ${p.cut ? 'checked' : ''}><span>Cut-out photo<small>Transparent background; shown on a soft tinted card</small></span></label>
+        ${photoField('img', p.img, { hint: 'Square photos look best. JPG, PNG or WebP.' })}
         <div data-wide-field ${p.cat === 'mushrooms' ? '' : 'hidden'}>${photoField('wide', p.wide, { label: 'Wide photo <small>mushroom spotlight</small>', wide: true })}</div>
       </div>
       <div class="sec">
@@ -569,7 +567,7 @@
       const payload = {
         name: f.name.value, nameAr: f.nameAr.value, cat: f.cat.value, origin: f.origin.value, originAr: f.originAr.value,
         badge: f.badge.value, badgeAr: f.badgeAr.value, pack: f.pack.value, packAr: f.packAr.value,
-        star: f.star.checked, cut: f.cut.checked, img: f.img.value, wide: f.wide?.value || '',
+        star: f.star.checked, cut: false, img: f.img.value, wide: f.wide?.value || '',
         taste: f.taste.value, tasteAr: f.tasteAr.value, uses: list(f.uses.value), usesAr: list(f.usesAr.value),
         discountPct: Number(f.discountPct.value || 0), discountUntil: f.discountUntil.value || null,
         active: f.active.checked, units,
