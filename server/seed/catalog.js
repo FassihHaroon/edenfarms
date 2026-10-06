@@ -5,8 +5,8 @@
 export const CATEGORIES = [
   { id: 'mushrooms', name: 'Mushrooms', note: 'Our speciality', img: 'assets/img/eden/mush-white.webp', star: true },
   { id: 'vegetables', name: 'Vegetables', note: 'Grown on our farm', img: 'assets/img/eden/peppers-photo.webp' },
-  { id: 'herbs', name: 'Fresh Herbs', note: 'Cut this morning', img: 'assets/img/eden/coriander.webp' },
-  { id: 'honey', name: 'Farm Honey', note: 'Pure Sidr honey', img: 'assets/img/eden/honey-jars.webp' },
+  { id: 'herbs', name: 'Fresh Herbs', note: 'Cut this morning', img: 'assets/img/eden/coriander-fresh.webp' },
+  { id: 'honey', name: 'Farm Honey', note: 'Pure Sidr honey', img: 'assets/img/eden/honey-fresh.webp' },
   { id: 'boxes', name: 'Bundles', note: 'Trio, crate & veg', img: 'assets/img/eden/shop-mush-shelf.webp' },
 ];
 
@@ -32,9 +32,9 @@ export const PRODUCTS = [
   { id: 'peppers', name: 'Red & Yellow Bell Peppers', cat: 'vegetables', origin: 'Eden Farm, Qatar', badge: 'Picked today',
     img: 'assets/img/eden/peppers-photo.webp', units: [{ l: '500 g', p: 6.5 }, { l: '1 kg', p: 12 }] },
   { id: 'corn', name: 'Sweet Corn', cat: 'vegetables', origin: 'Eden Farm, Qatar',
-    img: 'assets/img/eden/corn-photo.webp', units: [{ l: '3 cobs', p: 8 }, { l: '6 cobs', p: 15 }] },
+    img: 'assets/img/eden/corn-fresh.webp', units: [{ l: '3 cobs', p: 8 }, { l: '6 cobs', p: 15 }] },
   { id: 'chili', name: 'Long Green Chillies', cat: 'vegetables', origin: 'Eden Farm, Qatar',
-    img: 'assets/img/eden/chili-photo.webp', units: [{ l: '1 tray', p: 5 }, { l: '2 trays', p: 9 }] },
+    img: 'assets/img/eden/chili-fresh.webp', units: [{ l: '1 tray', p: 5 }, { l: '2 trays', p: 9 }] },
   { id: 'capsicum', name: 'Green & Yellow Capsicum', cat: 'vegetables', origin: 'Eden Farm, Qatar',
     img: 'assets/img/eden/capsicum-photo.webp', units: [{ l: '500 g', p: 6 }, { l: '1 kg', p: 11 }] },
   { id: 'cucumbers', name: 'Baby Cucumbers', cat: 'vegetables', origin: 'Eden Farm, Qatar',
@@ -50,9 +50,9 @@ export const PRODUCTS = [
 
   /* ---- Herbs & honey ---- */
   { id: 'coriander', name: 'Fresh Coriander', cat: 'herbs', origin: 'Eden Farm, Qatar', badge: 'Cut today',
-    img: 'assets/img/eden/coriander.webp', units: [{ l: '1 bunch', p: 2.5 }, { l: '3 bunches', p: 6 }] },
+    img: 'assets/img/eden/coriander-fresh.webp', units: [{ l: '1 bunch', p: 2.5 }, { l: '3 bunches', p: 6 }] },
   { id: 'honey', name: 'Eden Farm Sidr Honey', cat: 'honey', origin: 'Eden Farm, Qatar', badge: 'From our farm',
-    img: 'assets/img/eden/honey-jars.webp', units: [{ l: '1 jar', p: 90 }, { l: '2 jars', p: 170 }] },
+    img: 'assets/img/eden/honey-fresh.webp', units: [{ l: '1 jar', p: 90 }, { l: '2 jars', p: 170 }] },
 ];
 
 export const BOXES = [
