@@ -60,6 +60,8 @@ export function createApp({ db, sessionSecret, production = false, orderRateLimi
     },
     strictTransportSecurity: production ? { maxAge: 15552000, includeSubDomains: true } : false,
     crossOriginEmbedderPolicy: false,
+    // OpenStreetMap refuses tile requests that carry no Referer.
+    referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
     // The location button needs the browser's geolocation on our own pages.
     permissionsPolicy: undefined,
   }));
